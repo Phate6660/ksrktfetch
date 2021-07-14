@@ -1,0 +1,3 @@
+[submodule "nixinfo-ffi"]
+	path = nixinfo-ffi
+	url = https://github.com/Phate6660/nixinfo-ffi

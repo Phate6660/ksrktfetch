@@ -1,0 +1,21 @@
+### kinda sus, rktfetch ###
+Basically, it's rktfetch re-written from scratch except it uses my Rust lib nixinfo under the hood.
+
+Requirements:
+- MPD (optional -- for using nixinfo's music feature)
+- Racket
+- Rust
+
+## install ##
+# get the sources and enter the dir
+- git clone --recursive https://github.com/Phate6660/ksrktfetch && cd ksrktfetch
+# build the lib
+- cd nixinfo-ffi
+- cargo build --release
+# copy the lib into the right dir
+- cd ..
+- cp nixinfo-ffi/target/release/libnixinfo_ffi.so .
+# run the program
+- racket main.rkt
+# or run the program with
+- racket main.rkt -p PACKAGE_MANAGER
