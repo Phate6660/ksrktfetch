@@ -19,3 +19,19 @@ Requirements:
 - racket main.rkt
 # or run the program with
 - racket main.rkt -p PACKAGE_MANAGER
+
+## output ##
+CPU:  Intel Core i5-3470 CPU @ 3.20GHz
+DEV:  OptiPlex 7010
+DIST: Gentoo
+EDTR: /usr/bin/nvim
+ENV:  herbstluftwm
+GPU:  AMD/ATI Cedar Radeon HD 5000/6000/7350/8350 Series
+HOST: N/A (could not read /etc/hostname)
+KRNL: 5.10.27-gentoo-VALLEY
+PKGS: 75 (explicit), 641 (total)
+SH:   /bin/bash
+TERM: xterm
+UPTM: 21d 16h 26m
+USER: valley
+MUS:  Nothingface - An Audio Guide to Everyday Atrocity (1998) - Goldtooth
