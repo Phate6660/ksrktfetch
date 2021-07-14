@@ -50,31 +50,17 @@
              [("rpm") 8]
              [("xbps") 9]))
 
-(define cpu         (nixinfo-cpu-fun))
-(define device      (nixinfo-device-fun))
-(define distro      (nixinfo-distro-fun))
-(define editor      (nixinfo-editor-fun))
-(define environment (nixinfo-environment-fun))
-(define gpu         (nixinfo-gpu-fun))
-(define hostname    (nixinfo-hostname-fun))
-(define kernel      (nixinfo-kernel-fun))
-(define packages    (nixinfo-packages-fun pm))
-(define shell       (nixinfo-shell-fun))
-(define terminal    (nixinfo-terminal-fun))
-(define uptime      (nixinfo-uptime-fun))
-(define user        (nixinfo-user-fun))
-(define music       (nixinfo-music-fun))
-(display (string-append "CPU:  " cpu         "\n"))
-(display (string-append "DEV:  " device      "\n"))
-(display (string-append "DIST: " distro      "\n"))
-(display (string-append "EDTR: " editor      "\n"))
-(display (string-append "ENV:  " environment "\n"))
-(display (string-append "GPU:  " gpu         "\n"))
-(display (string-append "HOST: " hostname    "\n"))
-(display (string-append "KRNL: " kernel      "\n"))
-(display (string-append "PKGS: " packages    "\n"))
-(display (string-append "SH:   " shell       "\n"))
-(display (string-append "TERM: " terminal    "\n"))
-(display (string-append "UPTM: " uptime      "\n"))
-(display (string-append "USER: " user        "\n"))
-(display (string-append "MUS:  " music       "\n"))
+(display (string-append "CPU:  " (nixinfo-cpu-fun)         "\n"
+                        "DEV:  " (nixinfo-device-fun)      "\n"
+                        "DIST: " (nixinfo-distro-fun)      "\n"
+                        "EDTR: " (nixinfo-editor-fun)      "\n"
+                        "ENV:  " (nixinfo-environment-fun) "\n"
+                        "GPU:  " (nixinfo-gpu-fun)         "\n"
+                        "HOST: " (nixinfo-hostname-fun)    "\n"
+                        "KRNL: " (nixinfo-kernel-fun)      "\n"
+                        "PKGS: " (nixinfo-packages-fun pm) "\n"
+                        "SH:   " (nixinfo-shell-fun)       "\n"
+                        "TERM: " (nixinfo-terminal-fun)    "\n"
+                        "UPTM: " (nixinfo-uptime-fun)      "\n"
+                        "USER: " (nixinfo-user-fun)        "\n"
+                        "MUS:  " (nixinfo-music-fun)       "\n"))
